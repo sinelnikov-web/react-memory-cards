@@ -57,7 +57,7 @@ const Game = () => {
                     setWordsState(prev => prev.map((word, index) => index === idx ? {...word, isOpen: false} : word))
                     setOpenedCards(prev => prev.filter(cardId => cardId !== idx))
                 }, 2000)
-            } else {
+            } else if (!wordsState[idx].isGuess){
                 const twinIdx = wordsState[idx].twinIndex
                 setWordsState(prev => prev.map((word, index) => index === idx || index === twinIdx ? {
                     ...word,
