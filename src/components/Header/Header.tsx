@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({score, time, startGame}) => {
         <HeaderWrapper>
             <Container>
                 <HeaderInner>
-                    {time !== Infinity ? <Time>{minutes.toString().length == 2 ? minutes : `0${minutes}`}:{seconds.toString().length == 2 ? seconds : `0${seconds}`}</Time> : '00:00'}
+                    <Time>{minutes.toString().length == 2 ? minutes : `0${minutes}`}:{seconds.toString().length == 2 ? seconds : `0${seconds}`}</Time>
                     <Score>{score}/<span>16</span></Score>
                     <Button onClick={startGame}>Start</Button>
                 </HeaderInner>
