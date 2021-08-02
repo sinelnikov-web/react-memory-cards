@@ -49,7 +49,7 @@ const Game = () => {
     }
 
     const handleCardClick = (idx: number) => {
-        if (openedCards.length < 2 && gameInProcess) {
+        if (openedCards.length < 2 && gameInProcess && openedCards.indexOf(idx) === -1) {
             setOpenedCards(prev => [...prev, idx])
             if (!wordsState[wordsState[idx].twinIndex].isOpen) {
                 setWordsState(prev => prev.map((word, index) => index === idx ? {...word, isOpen: true} : word))
