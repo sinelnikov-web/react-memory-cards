@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-memory-cards/static/css/main.5330733f.chunk.css",
+    "main.js": "/react-memory-cards/static/js/main.01167550.chunk.js",
+    "main.js.map": "/react-memory-cards/static/js/main.01167550.chunk.js.map",
+    "runtime-main.js": "/react-memory-cards/static/js/runtime-main.a962ac51.js",
+    "runtime-main.js.map": "/react-memory-cards/static/js/runtime-main.a962ac51.js.map",
+    "static/js/2.dd19c5bb.chunk.js": "/react-memory-cards/static/js/2.dd19c5bb.chunk.js",
+    "static/js/2.dd19c5bb.chunk.js.map": "/react-memory-cards/static/js/2.dd19c5bb.chunk.js.map",
+    "static/js/3.0b089374.chunk.js": "/react-memory-cards/static/js/3.0b089374.chunk.js",
+    "static/js/3.0b089374.chunk.js.map": "/react-memory-cards/static/js/3.0b089374.chunk.js.map",
+    "index.html": "/react-memory-cards/index.html",
+    "static/css/main.5330733f.chunk.css.map": "/react-memory-cards/static/css/main.5330733f.chunk.css.map",
+    "static/js/2.dd19c5bb.chunk.js.LICENSE.txt": "/react-memory-cards/static/js/2.dd19c5bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a962ac51.js",
+    "static/js/2.dd19c5bb.chunk.js",
+    "static/css/main.5330733f.chunk.css",
+    "static/js/main.01167550.chunk.js"
+  ]
+}
