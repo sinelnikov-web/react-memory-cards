@@ -9,7 +9,7 @@ import {CardType, generateWords} from "../../utils/words-generator";
 const Game = () => {
     const words = ['Cow', 'Snake', 'Lion', 'Horse', 'Fox', 'Fish', 'Cat', 'Dog']
     const [bestTime, setBestTime] = useState(() => {
-        return +(localStorage.getItem('bestTime') || 0)
+        return +(localStorage.getItem('bestTime') || 'infinity')
     })
     const [isWin, setIsWin] = useState(false)
     const [gameInProcess, setGameInProcess] = useState(false)
@@ -33,7 +33,7 @@ const Game = () => {
     }, [score])
 
     const win = () => {
-        if (timer < bestTime) {
+        if (timer < +bestTime) {
             localStorage.setItem('bestTime', timer.toString())
             setBestTime(timer)
         }
