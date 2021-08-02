@@ -14,7 +14,7 @@ const BestTime: React.FC<BestTimeProps> = ({bestTime}) => {
     return (
         <CenteredGrid>
             <BestScoreTitle>
-                Your best score is {bestTime === Infinity ? '00:00' : minutes.toString().length === 2 ? minutes : `0${minutes}`}:{seconds.toString().length === 2 ? seconds : `0${seconds}`}
+                Your best score is {bestTime === Infinity ? '00:00' : (minutes.toString().length === 2 ? minutes : `0${minutes}`)+':'+(seconds.toString().length === 2 ? seconds : `0${seconds}`)}
             </BestScoreTitle>
         </CenteredGrid>
     );
